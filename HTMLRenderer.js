@@ -19,7 +19,7 @@ class HTMLRenderer {
    * @param {String} access_token - ключ доступа к данным документа на сервере
    */
   constructor() {
-    QDocumentsViewer.instance = this;
+    HTMLRenderer.instance = this;
 
     // URL Utility
     this.#dom_url = window.URL || URL || window.webkitURL || window;
